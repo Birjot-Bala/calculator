@@ -44,15 +44,7 @@ button:hover {
 #buttonArea {
     display: flex;
     margin-top: 5px;
-    /* flex-grow: 1; */
 }
-
-/* #buttonArea {
-    display: grid;
-    margin-top: 10px;
-    grid-template-areas: 
-        "top top top top";
-} */
 
 #numbersArea {
     display: flex;
