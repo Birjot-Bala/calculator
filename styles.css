@@ -1,10 +1,18 @@
 body {
     font-size: xx-large;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: rgb(116, 173, 230);
 }
 
 button {
-    font-size: xx-large;
+    font-size: x-large;
+    background-color: rgb(160, 209, 251);
+    border-color: rgb(18, 46, 96);
+    border-radius: 5%;
+}
+
+button:hover {
+    background-color:rgb(182, 221, 255);
 }
 
 #container {
@@ -15,30 +23,42 @@ button {
 #calculator {
     display: flex;
     flex-direction: column;
-    height: 480px;
-    width: 480px;
+    margin-top: 100px;
+    height: 400px;
+    width: 400px;
+    border: 12px solid rgb(20, 48, 96);
+    background-color: rgb(45, 77, 124);
 }
 
 #display {
     display: flex;
     padding-right: 15px;
-    border: 1px solid #999;
+    border-bottom: 12px solid rgb(20, 48, 96);
     height: 2em;
+    overflow: hidden;
     justify-content: end;
     align-items: center;
+    background-color: rgb(255, 255, 255);
 }
 
 #buttonArea {
     display: flex;
     margin-top: 5px;
-    border: 1px solid #999;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
+
+/* #buttonArea {
+    display: grid;
+    margin-top: 10px;
+    grid-template-areas: 
+        "top top top top";
+} */
 
 #numbersArea {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    justify-content: left;
     gap: 5px;
     padding: 5px;
     width: 60%;
@@ -50,4 +70,12 @@ button {
     width: 40%;
     gap: 5px;
     padding: 5px;
+}
+
+#operatorsArea button {
+    background-color: rgb(116, 173, 230);
+}
+
+#operatorsArea button:hover {
+    background-color:rgb(182, 221, 255);
 }
